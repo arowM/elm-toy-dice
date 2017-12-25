@@ -1,0 +1,13 @@
+<% var data = htmlWebpackPlugin.options.data %>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title><%= data.title %></title>
+  </head>
+  <body id="body">
+    <img src="<%= require('./img/three-dots.svg') %>" style="margin: auto;width: 20vw;display: block;padding: 40vh 0;" alt="loading">
+  </body>
+</html>

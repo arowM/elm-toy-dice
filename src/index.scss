@@ -1,0 +1,104 @@
+@import 'reset';
+@import 'layout';
+@import 'base';
+
+.header {
+  background-color: $main-color0;
+  color: $invert-text-color;
+  box-shadow: 0 4px 5px -3px $shadow-color;
+  margin-bottom: 4px;
+}
+
+.drumWindow {
+  height: 2em;
+  width: 4em;
+  box-shadow: inset 0 2px 6px -1px $shadow-color;
+  overflow-y: hidden;
+}
+
+.drum {
+  animation-name: drum;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+
+  &_top {
+    transition-property: none;
+    transition-timing-function: cubic-bezier(.17, .3, .5, 1.45);
+    transition-duration: 3s;
+
+    &[data-margin] {
+      transition-property: margin;
+    }
+
+    &[data-margin="0"] {
+      margin-top: -22em;
+    }
+
+    &[data-margin="1"] {
+      margin-top: -24em;
+    }
+
+    &[data-margin="2"] {
+      margin-top: -4em;
+    }
+
+    &[data-margin="3"] {
+      margin-top: -6em;
+    }
+
+    &[data-margin="4"] {
+      margin-top: -8em;
+    }
+
+    &[data-margin="5"] {
+      margin-top: -10em;
+    }
+
+    &[data-margin="6"] {
+      margin-top: -12em;
+    }
+
+    &[data-margin="7"] {
+      margin-top: -14em;
+    }
+
+    &[data-margin="8"] {
+      margin-top: -16em;
+    }
+
+    &[data-margin="9"] {
+      margin-top: -18em;
+    }
+
+    &[data-margin="10"] {
+      margin-top: -20em;
+    }
+  }
+
+  &-stopped {
+    animation-name: none;
+  }
+
+  &_row {
+    width: 100%;
+    height: 2em;
+    text-align: center;
+  }
+}
+
+.button {
+  border-radius: 0.6em;
+  border: solid $border-width $main-color2;
+  cursor: pointer;
+}
+
+@keyframes drum {
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -22em;
+  }
+}

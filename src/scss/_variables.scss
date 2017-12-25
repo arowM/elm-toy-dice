@@ -1,0 +1,40 @@
+/* =======
+ *  Sizes
+ * ======= */
+$sp-size: 600px;
+$tablet-size: 960px;
+$pc-size: 1600px;
+$default-padding: 0.4rem;
+$invert-padding: -$default-padding;
+$border-width: 2px;
+$border-radius: 0.8em;
+$button-radius: 0.4em;
+
+/* =============
+ *  Font colors
+ * ============= */
+$text-color: #333;
+$invert-text-color: #fdfcfd;
+$subtext-color: #666;
+
+/* ==============
+ *  Color themes
+ * ============== */
+
+$background-color: $invert-text-color;
+$shadow-color: $text-color;
+$border-color: $text-color;
+$accent-color: #ac0000;
+$main-color0: #666;
+$main-color1: #888;
+$main-color2: #aaa;
+$sub-color0: #46c;
+$sub-color1: #68e;
+$sub-color2: #8af;
+
+/* ==================
+ *  Timing functions
+ * ================== */
+$over-in-out: cubic-bezier(0.5, -0.45, 0.5, 1.45);
+$over-out: cubic-bezier(0.5, 0, 0.5, 1.45);
+$over-in: cubic-bezier(0.5, -0.45, 0.5, 1);
